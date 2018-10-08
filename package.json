@@ -1,0 +1,12 @@
+{
+  "name": "webpack-polymer",
+  "description": "We look into how to package a polymer application with webpack",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "polymer-cli": "^1.8.0",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}

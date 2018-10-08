@@ -1,0 +1,7 @@
+{
+  "name": "webpack-polymer",
+  "short_name": "webpack-polymer",
+  "description": "We look into how to package a polymer application with webpack",
+  "start_url": "/",
+  "display": "standalone"
+}
