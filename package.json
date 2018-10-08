@@ -1,12 +1,24 @@
 {
   "name": "webpack-polymer",
   "description": "We look into how to package a polymer application with webpack",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
   "dependencies": {
-    "@polymer/polymer": "^3.0.0"
+    "@polymer/polymer": "^3.0.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "wc-input": "0.0.6"
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^2.0.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
     "polymer-cli": "^1.8.0",
-    "wct-browser-legacy": "^1.0.0"
+    "wct-browser-legacy": "^1.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
   }
 }

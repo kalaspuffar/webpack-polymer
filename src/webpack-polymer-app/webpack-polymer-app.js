@@ -1,4 +1,5 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
+import 'wc-input';
 
 /**
  * @customElement
@@ -13,6 +14,8 @@ class WebpackPolymerApp extends PolymerElement {
         }
       </style>
       <h2>Hello [[prop1]]!</h2>
+
+      <wc-input label="Enter your name"></wc-input>
     `;
   }
   static get properties() {
