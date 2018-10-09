@@ -12,10 +12,15 @@ class WebpackPolymerApp extends PolymerElement {
         :host {
           display: block;
         }
+        img {
+          width: 100%;
+        }
       </style>
       <h2>Hello [[prop1]]!</h2>
 
       <wc-input label="Enter your name"></wc-input>
+
+      <img src="images/view.jpg" />
     `;
   }
   static get properties() {

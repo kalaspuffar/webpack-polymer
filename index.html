@@ -10,10 +10,24 @@
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
 
-    <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.0.2/webcomponents-loader.js"></script>
     <script type="module" src="app.bundle.js" crossorigin></script>
+    <style>
+      body, html {
+        padding: 10px;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <webpack-polymer-app></webpack-polymer-app>
+
+    <script>
+      (function() {
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js');
+        }
+      })();
+    </script>
   </body>
 </html>
