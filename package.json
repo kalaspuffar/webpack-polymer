@@ -5,7 +5,7 @@
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "npm run build && wct --npm && npm run test:lighthouse",
-    "test:lighthouse": "concurrently --kill-others \"http-server dist\" \"lighthouse --view http://localhost:8080\" "
+    "test:lighthouse": "concurrently --kill-others \"http2-server -S dist\" \"lighthouse --view http://localhost:8080\" "
   },
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
@@ -19,6 +19,7 @@
     "http-server": "^0.11.1",
     "lighthouse": "^3.2.1",
     "polymer-cli": "^1.8.0",
+    "static-http2-server": "^1.7.1",
     "sw-precache-webpack-plugin": "^0.11.5",
     "wct-browser-legacy": "^1.0.0",
     "web-component-tester": "^6.8.0",

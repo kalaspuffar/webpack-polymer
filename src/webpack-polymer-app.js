@@ -20,7 +20,7 @@ class WebpackPolymerApp extends PolymerElement {
 
       <wc-input label="Enter your name"></wc-input>
 
-      <img src="images/view.jpg" />
+      <img alt="Nice view of a balcony with mountains in the background" src="images/view.jpg" />
     `;
   }
   static get properties() {

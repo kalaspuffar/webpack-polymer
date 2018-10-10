@@ -20,6 +20,10 @@ module.exports = {
         toType: 'dir'
       },
       {
+        from: 'images/favicon.ico',
+        to: 'favicon.ico',
+      },
+      {
         from: path.resolve(__dirname, 'node_modules/@webcomponents/webcomponentsjs/*.js'),
         to: 'node_modules/@webcomponents/webcomponentsjs/[name].[ext]'
       }
