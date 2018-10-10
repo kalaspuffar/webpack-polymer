@@ -3,19 +3,25 @@
   "description": "We look into how to package a polymer application with webpack",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "test": "npm run build && wct --npm && npm run test:lighthouse",
+    "test:lighthouse": "concurrently --kill-others \"http-server dist\" \"lighthouse --view http://localhost:8080\" "
   },
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
     "wc-input": "0.0.6"
   },
   "devDependencies": {
-    "sw-precache-webpack-plugin": "^0.11.5",
-    "copy-webpack-plugin": "^4.5.2",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^4.0.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "http-server": "^0.11.1",
+    "lighthouse": "^3.2.1",
     "polymer-cli": "^1.8.0",
+    "sw-precache-webpack-plugin": "^0.11.5",
     "wct-browser-legacy": "^1.0.0",
+    "web-component-tester": "^6.8.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",

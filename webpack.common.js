@@ -18,6 +18,10 @@ module.exports = {
         from: 'index.html',
         to: '.',
         toType: 'dir'
+      },
+      {
+        from: path.resolve(__dirname, 'node_modules/@webcomponents/webcomponentsjs/*.js'),
+        to: 'node_modules/@webcomponents/webcomponentsjs/[name].[ext]'
       }
     ], {}),
   ],
